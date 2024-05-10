@@ -14,11 +14,18 @@ def get_save_path(bin):
     save_file_path = os.path.join(directory, "SAVE.BIN")
     return resource_path(save_file_path)
 
+def setup_saves():
+    save_dir = os.path.join(os.path.expanduser('~/Documents'), 'Zelauncher/game_saves')
+    game_saves = resource_path("data/game_saves")
+    if not os.path.exists(save_dir):
+        shutil.copytree(game_saves, save_dir)
+    return save_dir
+
 def get_config_path():
-    config_directory = os.path.join(os.getenv('APPDATA'), 'Zelauncher')
-    if not os.path.exists(config_directory):
-        os.makedirs(config_directory)
-    return os.path.join(config_directory, 'config.json')
+    game_dir = os.path.join(os.path.expanduser('~/Documents'), 'Zelauncher')
+    if not os.path.exists(game_dir):
+        os.makedirs(game_dir)
+    return os.path.join(game_dir, 'config.json')
 
 def load_directories():
     config_path = get_config_path()
@@ -82,7 +89,6 @@ def update_save_path(key):
     directories = load_directories()
     directories[key] = input_dir(key)
     save_directories(directories)
-
 
 def path_settings(frame, keys):
     show_frame(frame)
@@ -201,10 +207,11 @@ else:
     for key in directories_key:
         data[key] = input_dir(key)
     save_directories(data)
+
 if "bin_path" not in data:
-    data["bin_path"] = resource_path("data/game_saves")
+    data["bin_path"] = setup_saves()
     save_directories(data)
-  
+
 binpath = data["bin_path"]
 
 show_frame(frame_color)
@@ -221,3 +228,4 @@ open_save_dir.pack(side="left", padx=5, pady=10)
 add_buttons_with_images(frame_levels, buttons_frame3, "Please select your starting level:")
 
 root.mainloop()
+
