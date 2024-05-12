@@ -167,8 +167,10 @@ def open_saves():
 
 def perform_final_actions():
     global binpath
+    global data
     print(f"All choices made, performing final actions...")
     finalpath = get_save_path(binpath)
+    data = load_directories()
     for item in [data["local_save"], data["steam_save"]]:
         shutil.copy(finalpath, item)
     if "second_account" in data:
