@@ -6,7 +6,7 @@
 
 ## Installation Instructions
 
-- ***YouTube tutorial coming soon***
+- **[Video tutorial](https://www.youtube.com/watch?v=IOy1BmeXBs8)**
 
 Follow these simple steps to install and configure Zelauncher:
 
