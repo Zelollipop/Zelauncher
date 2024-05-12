@@ -19,7 +19,7 @@ Follow these simple steps to install and configure Zelauncher:
      - **Local Save Directory:**
        - Default: `C:\Users\username\AppData\Local\Annapurna Interactive\Journey\Steam`
        - Replace `username` with your actual Windows user name.
-       - If you do not see the `AppData` direcotry, in your File explorer click `View` and check the box `Hidden items`
+       - If you do not see the `AppData` directory, in your File explorer click `View` and check the box `Hidden items`
      
      - **Steam Save Directory:**
        - Default: `C:\Program Files (x86)\Steam\userdata\steamid\638230\remote`
