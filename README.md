@@ -1,3 +1,5 @@
+![Banner](https://github.com/Zelollipop/Zelauncher/blob/main/data/banner2.png?raw=true)
+
 # Zelauncher
 
 ### Author: Zelollipop
