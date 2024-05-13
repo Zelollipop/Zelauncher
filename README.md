@@ -1,4 +1,4 @@
-![Banner](https://github.com/Zelollipop/Zelauncher/blob/main/data/banner2.png?raw=true)
+![Banner](https://github.com/Zelollipop/Zelauncher/blob/main/data/banner.png?raw=true)
 
 # Zelauncher
 
