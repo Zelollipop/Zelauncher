@@ -4,7 +4,8 @@
 
 ### Author: Zelollipop
 
-**Zelauncher** is a customizable game launcher that enables players to manage and start their game with specific save files and settings, ensuring an enhanced and personalized gaming experience. If you're in need of support you can tag me in the [Journey community discord](https://discord.gg/Dbgr6EurFb). Constructive feedback is also always welcome!
+**Zelauncher** is a customizable game launcher designed to enhance your gaming experience by enabling you to manage and start your games with specific save files and settings tailored to your preferences. With Zelauncher, you have the flexibility to select your character's robe color, tier and choose your starting level with all previous symbols collected. 
+If you're in need of support you can tag me in the [Journey community discord](https://discord.gg/Dbgr6EurFb). Constructive feedback is also always welcome!
 
 ## Installation Instructions
 
